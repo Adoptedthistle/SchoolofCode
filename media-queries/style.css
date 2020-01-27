@@ -1,0 +1,36 @@
+body {
+  background-color: white;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: fuchsia;
+    border: 2px dotted;
+    border-radius: 0%;
+  }
+}
+
+@media only screen and (max-width: 600) and (min-width: 301px) {
+  body {
+    font-family: "Lobster", cursive;
+    background-color: lightblue;
+    border: 2px black;
+    border-radius: 10%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: palegoldenrod;
+    font-family: "Dancing Script", cursive;
+    border: black;
+    border-radius: 100%;
+  }
+}

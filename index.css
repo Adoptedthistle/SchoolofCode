@@ -1,0 +1,23 @@
+h1 {
+	color:red;
+}
+
+p{
+Text-align: center;
+color:blue;
+}
+
+#box {
+	border: 10px solid red;
+	margin: 50px;
+	padding: 20px;
+
+}
+
+#cat{
+
+display: block
+margin-left: auto;
+margin-rigt:auto;
+width: 50%;
+}
