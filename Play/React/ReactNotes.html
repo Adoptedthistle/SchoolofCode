@@ -1,0 +1,16 @@
+function Bootcamper(){
+    return <li className ="bootcamper"{props.firstName }</li>;
+
+
+}
+
+function Bootcampers(){
+return (
+     <ul>
+    {bootcampers.map(function(item) {
+        return <Bootcamper firstName ={item.firstName}/>;
+    })}
+</ul>
+);
+}
+

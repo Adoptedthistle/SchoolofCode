@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Knewave|Krona+One|Lacquer|Odibee+Sans|Ubuntu&display=swap");
+
+li:nth-child(1) {
+  font-family: "Odibee Sans";
+}
+
+li:nth-child(2) {
+  font-family: "Lacquer";
+}
+li:nth-child(3) {
+  font-family: "Krona One";
+}
+
+li:nth-child(4) {
+  font-family: "Ubuntu";
+}

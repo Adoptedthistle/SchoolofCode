@@ -1,0 +1,12 @@
+:root {
+  --y: 30px;
+  --x: 30px;
+}
+
+#img {
+  width: 100px;
+  position: relative;
+  top: (var--y);
+  left: (var--x);
+  transform: (-50%, -50%);
+}

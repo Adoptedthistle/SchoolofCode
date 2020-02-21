@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="text/babel">
+      function Counter() {
+        const [state, setState] = React.useState(0);
+        return (
+          <div>
+            {state}
+            <button
+              onClick={function() {
+                setState(state + 1);
+              }}
+            >
+              +
+            </button>
+
+            <button
+              onClick={function() {
+                setState(state - 1);
+              }}
+            >
+              -
+            </button>
+          </div>
+        );
+      }
+
+      function Header({ title }) {
+        const [state, setState] = React.useState(false);
+        return (
+          <header
+            onClick={function() {
+              setIsClicked(!state);
+            }}
+          >
+            <h1>{state ? title : "*******"}</h1>
+          </header>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Counter />
+            <Header title="Test" />
+            <Header title="DO NOT SHOW" />
+            <button className="demo">Hello</button>
+          </div>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("main"));
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

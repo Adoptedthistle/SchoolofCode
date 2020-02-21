@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <style>
+      li {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="text/babel">
+      const bootcampers = [
+        { firstName: "Patrick", lastName: "Young" },
+        { firstName: "Mark", lastName: "Gilliland" },
+        { firstName: "Liz", lastName: "Kaufman" },
+        { firstName: "Cheryl", lastName: "Asif" },
+        { firstName: "Jodie", lastName: "Neville" },
+        { firstName: "Tao", lastName: "Sharma" },
+        { firstName: "Sam", lastName: "Webber" },
+        { firstName: "Charles", lastName: "Baiden" },
+        { firstName: "Mark", lastName: "Gilligan " },
+        { firstName: "Helen", lastName: "Kent" },
+        { firstName: "Alexa-Jane", lastName: "Berry" },
+        { firstName: "Grace", lastName: "Barata" },
+        { firstName: "Hannah", lastName: "Murphy" },
+        { firstName: "James", lastName: "Greygoose" },
+        { firstName: "Joshua", lastName: "Douglas-Smith" },
+        { firstName: "Melanie", lastName: "Russon" },
+        { firstName: "Murray", lastName: "Hoggett" },
+        { firstName: "Olivia", lastName: "McLeod" },
+        { firstName: "Ravinder", lastName: "Chahal" },
+        { firstName: "Sam", lastName: "Dent" },
+        { firstName: "Sarah", lastName: "Barkley" },
+        { firstName: "Vinicius", lastName: "Pinhiero Porto" },
+        { firstName: "Yasmin", lastName: "Ali" },
+        { firstName: "Charlotte", lastName: "Mayne" }
+      ];
+
+      function Bootcampers(props) {
+        const [isDisplayed, setIsDisplayed] = React.useState(true);
+        return bootcampers.map(function(item) {
+          return (
+            <ul>
+              <li>
+                {item.firstName} {item.lastName}
+              </li>
+            </ul>
+          );
+        });
+      }
+
+
+      //change color of each list item onhover
+      //need to identify color (initial state) then identify color onHover
+
+
+      function onHover(props) {
+          const [onHover, setOnHover] = React.useState(false)
+          return(
+          <ul>
+            <li>onHover={function(){
+            (!onHover)
+          }
+        >
+            <li>{onHover ? {firstName}{lastName}: props}</li>
+            </ul>
+
+
+
+      }
+
+      function App() {
+        return (
+          <div>
+            <Bootcampers />
+            <onClick/>
+          </div>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("main"));
+    </script>
+  </body>
+</html>
