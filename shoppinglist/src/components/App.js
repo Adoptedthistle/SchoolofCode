@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Input from "./Input";
+import ClearButton from "./ClearButton";
+import List from "./List";
 
 function App() {
   return <div className="App"></div>;
@@ -13,3 +16,6 @@ export default App;
 //As a user I want to be able see all my items on my shopping so that I know what to buy
 //As a user I want to be able to clear the list so that I can start again for my next shop
 //As a user I want a notification if I try to add the same item twice so that I don't buy too much of one thing.
+
+//Add function addToList here (feeds down to input)
+//Add list function here
