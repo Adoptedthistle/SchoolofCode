@@ -1,14 +1,35 @@
 import React from "react";
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
 import Input from "./Input";
 import ClearButton from "./ClearButton";
 import List from "./List";
+//import { waitForDomChange } from "@testing-library/react";
+
+//Add a test list for the shopping items
+//Need a function to clearAll (ClearButton) items on the shopping list
+//Need a function connected to input.js to add items to the list
 
 function App() {
-  return <div className="App"></div>;
-}
+  const [list, setList] = React.useState(["apple", "drink"]);
 
+  function clearAll() {
+    return setList([]);
+  }
+
+  function addList() {
+    return list();
+  }
+
+  return (
+    <div>
+      <h1>Shopping List</h1>
+      <Input Input={Input} />
+      <List List={List} />
+      <ClearButton ClearButton={ClearButton} />
+    </div>
+  );
+}
 export default App;
 
 //User Stories

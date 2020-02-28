@@ -13,6 +13,7 @@ function RandomWords() {
   }
   //setIsOn = !isOn;
   return (
+    
     <div>
       {words[pointer]}
       <button onClick={handleClick}>Generate Word</button>
