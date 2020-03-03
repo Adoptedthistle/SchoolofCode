@@ -22,6 +22,7 @@
   - searchTerm
 
     - needs to be seen by search bar > search field, autocomplete > options list
+
     - needs to be edited by options > option, search bar > search field
       - options needs to be able to set the searchTerm when clicking an option
       - search field needs to be able to set the searchTerm when typing in to the input

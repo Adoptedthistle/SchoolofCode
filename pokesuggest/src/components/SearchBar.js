@@ -1,9 +1,8 @@
 import React from "react";
 
 //PokeSuggest
-//Search
-//SearchField
-//SearchButton
+//Search Bar includes input and button
+//
 
 function SearchBar({ searchTerm, handleChange }) {
   //const [searchTerm, setSearchTerm] = React.useState;

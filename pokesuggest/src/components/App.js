@@ -9,7 +9,14 @@ import Proptypes from "prop-types";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState();
-  // want searchTerm state
+  //want searchTerm state to allow text input to pull search results which will be seen by Options
+  //Searchbar needs to know when an input has been made
+  //options need sto be clickable (onClick)
+  //searchfield needs to know when an input has been made and call results
+  function searchTerm(){
+    
+    }
+  }
 
   return (
     <div>
